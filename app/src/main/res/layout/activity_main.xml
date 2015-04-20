@@ -13,5 +13,29 @@
         android:id="@+id/btnDiscover"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="btnDiscover_onClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/btnStopDiscovery"
+        android:onClick="btnStopDiscovery_onClick"
+        android:layout_alignTop="@+id/btnDiscover"
+        android:layout_toRightOf="@+id/btnDiscover"
+        android:layout_toEndOf="@+id/btnDiscover"
+        android:enabled="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/txtLog"
+        android:layout_alignRight="@+id/btnDiscover"
+        android:layout_alignEnd="@+id/btnDiscover"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom" />
+
 </RelativeLayout>
