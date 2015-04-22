@@ -27,15 +27,24 @@
         android:layout_toEndOf="@+id/btnDiscover"
         android:enabled="false" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:id="@+id/txtLog"
-        android:layout_alignRight="@+id/btnDiscover"
-        android:layout_alignEnd="@+id/btnDiscover"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:gravity="bottom" />
+    <ScrollView android:id="@+id/textAreaScroller"
+        android:layout_width="fill_parent"
+        android:layout_height="173px"
+        android:layout_x="0px"
+        android:layout_y="25px"
+        android:scrollbars="vertical"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fbedittext"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/fbedittext"
+            android:layout_marginTop="22dp"
+            android:lines="7"
+            android:id="@+id/txtLog"
+            />
+    </ScrollView>
+
 
 </RelativeLayout>
